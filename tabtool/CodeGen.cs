@@ -225,7 +225,7 @@ namespace tabtool
                         sw.WriteLine("          DataReader dr = new DataReader();");
                         sw.WriteLine();
                         sw.WriteLine("          var vs = s.Split(',');");
-                        sw.WriteLine("          if (vs.Length != 2)");
+                        sw.WriteLine("          if (vs.Length != {0})", meta.Fields.Count());
                         sw.WriteLine("          {");
                         sw.WriteLine("              return false;");
                         sw.WriteLine("          }");
